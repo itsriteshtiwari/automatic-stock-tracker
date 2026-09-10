@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MarketMind AI — Indian market intelligence and stock research dashboard." />
+  <title>MarketMind AI — Market Intelligence</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">M</span><div><strong>MarketMind AI</strong><small>Market intelligence</small></div></div>
+      <div class="search-wrap"><span>⌕</span><input id="companySearch" type="search" placeholder="Search company or symbol…" autocomplete="off" /></div>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Toggle theme">◐</button>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <div><p class="eyebrow">PHASE 1 · FOUNDATION</p><h1>Indian market, explained by AI.</h1><p class="hero-copy">A research workspace for market direction, company analysis, and eventually evidence-based predictions.</p></div>
+        <div class="status-pill"><span></span> Data layer: demo mode</div>
+      </section>
+
+      <section class="index-grid" aria-label="Market indices">
+        <article class="metric-card"><div><span>NIFTY 50</span><b id="nifty">25,120.65</b></div><strong class="positive">+0.72%</strong></article>
+        <article class="metric-card"><div><span>BANK NIFTY</span><b>57,845.20</b></div><strong class="positive">+0.91%</strong></article>
+        <article class="metric-card"><div><span>SENSEX</span><b>82,450.30</b></div><strong class="positive">+0.64%</strong></article>
+        <article class="metric-card"><div><span>INDIA VIX</span><b>14.20</b></div><strong class="neutral">+0.18%</strong></article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel outlook-panel">
+          <div class="panel-head"><div><p class="eyebrow">AI MARKET OUTLOOK</p><h2>Today's market bias</h2></div><span class="confidence">Moderate confidence</span></div>
+          <div class="outlook-main"><div class="gauge"><div class="gauge-value">68%</div><div class="gauge-label">BULLISH</div></div><div class="outlook-copy"><h3>Positive bias with event risk</h3><p>The Phase 1 interface is ready for live data, technical indicators, news sentiment, and model probabilities in later phases.</p><div class="mini-grid"><div><span>Support</span><b>24,850</b></div><div><span>Resistance</span><b>25,300</b></div><div><span>Global tone</span><b class="positive">Positive</b></div></div></div></div>
+        </article>
+
+        <article class="panel quick-panel">
+          <div class="panel-head"><div><p class="eyebrow">QUICK RESEARCH</p><h2>Ask about a stock</h2></div></div>
+          <form id="researchForm"><input id="researchInput" placeholder="e.g. Reliance, TCS, INFY" /><button type="submit">Analyze</button></form>
+          <div id="researchResult" class="research-result" aria-live="polite">Search a company to preview the research workflow.</div>
+        </article>
+      </section>
+
+      <section class="two-col">
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">MARKET MOVERS</p><h2>Watchlist</h2></div><button class="text-btn" id="refreshBtn" type="button">Refresh</button></div><div id="watchlist" class="table"></div></article>
+        <article class="panel"><div class="panel-head"><div><p class="eyebrow">GLOBAL CONTEXT</p><h2>Overnight signals</h2></div></div><div class="signal-list"><div><span>🇺🇸 S&P 500</span><b class="positive">+0.41%</b></div><div><span>🇯🇵 Nikkei 225</span><b class="positive">+0.58%</b></div><div><span>🛢 Brent Crude</span><b class="negative">−0.33%</b></div><div><span>💵 USD / INR</span><b class="neutral">83.12</b></div></div><p class="disclaimer">Demo figures only. No investment decision should be based on this Phase 1 screen.</p></article>
+      </section>
+
+      <footer>MarketMind AI · Phase 1 foundation · Predictions will be probabilistic, explainable, and backtested before being used for decision support.</footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
